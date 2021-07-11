@@ -4,7 +4,6 @@
 
 int main(void) {
     srand((unsigned int)time(NULL));
-    char str[256];
     printf("Rolling the dice…\n");
     int die1 = rand() % 6 + 1;
     int die2 = rand() % 6 + 1;
@@ -13,10 +12,10 @@ int main(void) {
     int total = die1 + die2;
     printf("Total value: %d\n" , total);
 if(total>=7){
-   printf("%s won!\n", str);
+   printf("You won!\n");
 }
 else if(total<7){
-    printf("%s lost!\n", str);
+    printf("You lost!\n");
 }
     return 0;
 }
