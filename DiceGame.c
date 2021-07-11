@@ -16,10 +16,10 @@ int main(void) {
     int total = die1 + die2;
     printf("Total value: %d\n" , total);
 if(total>=7){
-   printf("You won!\n");
+   printf("%s won!\n", str);
 }
 else if(total<7){
-    printf("You lost!\n");
+    printf("%s lost!\n" ,str);
 }
     return 0;
 }
